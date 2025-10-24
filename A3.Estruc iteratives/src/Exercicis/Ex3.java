@@ -10,18 +10,22 @@ import java.util.Scanner;
  *
  * @author mmo1100
  */
-public class Ex2 {
+public class Ex3 {
     public static void main(String[] args) {
-        // declarem variables
-        int num,print =2 ;
+        // declarem variables 
+        int N;
+        int num=2;
         Scanner in = new Scanner (System.in);
-        //demanem el num
-        System.out.print("Introduiex un numero natural : ");
-        num= in.nextInt();
-        while (print<num){
-            System.out.println(print +" ");
-            print+=2;
+        // demanem  el num 
+        System.out.println("Introduiex un numero natural: ");
+        N=in.nextInt();
+        for (int i = 2; i < num; i++) {
+            if (i%1==0){
+                System.out.println(i+"");
+            } 
         }
-        System.out.print("\b\n");
+        System.out.printf("\b\n");
     }
+   
 }
+     
